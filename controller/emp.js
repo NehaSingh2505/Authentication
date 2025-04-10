@@ -7,6 +7,7 @@ async function empRegister(req, res) {
     await Emp.create({name,email,password});
     return res.json({ message: "User registered successfully" });
     // return res,redirect("/login")
-    
+    res.redirect("/login");
+
 }
 module.exports = { empRegister};
