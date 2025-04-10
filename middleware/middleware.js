@@ -18,11 +18,11 @@ const {getUser}=require("../services/service");
  async function checkAuth(req,res,next){
     const userUid=req.cookies?.session_id;
     if(!userUid){
-        return res.redirect("/login")
+        return res.redirect("/login");
     }
     const user=getUser(userUid);    
     if(!user){
-        return res.redirect("/login")
+        return res.redirect("/login");
     }
     req.user=user;
     next();
