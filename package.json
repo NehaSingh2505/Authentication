@@ -11,12 +11,13 @@
     "start": "nodemon index.js"
   },
   "dependencies": {
+    "cookieparser": "^0.1.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "init": "^0.1.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.1",
     "nodemon": "^3.1.9",
     "path": "^0.12.7"
-  },
-  "devDependencies": {}
+  }
 }

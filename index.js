@@ -6,7 +6,6 @@ const userRoute=require("./routes/emp");
 const path=require("path");
 const uiRouter=require("./routes/uiEmp");
 const Emp=require("./models/emp");
-const emp=require('./routes/emp');
 //EJS setup
 
 
