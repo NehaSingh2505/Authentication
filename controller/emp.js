@@ -10,4 +10,13 @@ async function empRegister(req, res) {
     res.redirect("/login");
 
 }
+async function login(req,res){
+    console.log("Login called");
+    const {email,password}=req.body;
+    const user=await Emp.findOne({email,password});
+    if(!user){
+        res.json({message:"Invalid credentials"});
+        return;
+    }
+}
 module.exports = { empRegister};
